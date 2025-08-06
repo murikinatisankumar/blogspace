@@ -167,26 +167,351 @@ export default function HomePage() {
         onLogout={handleLogout}
       />
       
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Share Your Stories
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Discover amazing stories, share your thoughts, and connect with writers from around the world.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={() => isLoggedIn ? null : setShowAuthModal(true)}>
-              {isLoggedIn ? (
-                <Link href="/write">Write a Story</Link>
-              ) : (
-                'Get Started'
-              )}
-            </Button>
-            <Button variant="outline" size="lg">
-              <Link href="/explore">Explore Stories</Link>
-            </Button>
+      {/* Hero Section with Left-Side Animated Landscape */}
+      <section className="relative py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10 overflow-hidden">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[500px]">
+            
+            {/* Left Side - Animated Landscape */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="landscape-container">
+                {/* Mountain backdrop */}
+                <div className="mountain">
+                  <div className="backdrop"></div>
+                  <div className="zig zag1"></div>
+                  <div className="zig zag2"></div>
+                  <div className="zig zag3"></div>
+                  <div className="zig zag4"></div>
+                </div>
+
+                {/* Range */}
+                <div className="range">
+                  <div className="r1"></div>
+                  <div className="r2"></div>
+                  <div className="r3"></div>
+                  <div className="r4"></div>
+                  <div className="r5"></div>
+                  <div className="r6"></div>
+                  <div className="r7"></div>
+                </div>
+
+                {/* Trees - Back layer */}
+                <div className="tree treeBack tree1">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeBack tree2">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeBack tree3">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeBack tree4">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeBack tree5">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeBack tree6">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeBack tree7">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeBack tree8">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+
+                {/* Trees - Mid layer */}
+                <div className="tree treeMid tree1">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeMid tree2">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeMid tree3">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeMid tree4">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeMid tree5">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+
+                {/* Trees - Front layer */}
+                <div className="tree treeFront tree1">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeFront tree2">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeFront tree3">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+                <div className="tree treeFront tree4">
+                  <div className="top"></div>
+                  <div className="mid"></div>
+                  <div className="bot"></div>
+                  <div className="base"></div>
+                </div>
+
+                {/* Tower */}
+                <div className="tower">
+                  <div className="shadow"></div>
+                  <div className="flagPole"></div>
+                  <div className="roof1"></div>
+                  <div className="roof2"></div>
+                  <div className="wall">
+                    <div className="w1"></div>
+                    <div className="w2"></div>
+                    <div className="w3"></div>
+                    <div className="w4"></div>
+                    <div className="w5"></div>
+                  </div>
+                  <div className="legs">
+                    <div className="left"></div>
+                    <div className="right"></div>
+                    <div className="support1">
+                      <div className="criss"></div>
+                      <div className="cross"></div>
+                      <div className="flat"></div>
+                    </div>
+                    <div className="support2">
+                      <div className="criss"></div>
+                      <div className="cross"></div>
+                      <div className="flat"></div>
+                    </div>
+                  </div>
+                  <div className="railing">
+                    <div className="r1"></div>
+                    <div className="r2"></div>
+                    <div className="r3"></div>
+                    <div className="r4"></div>
+                    <div className="r5"></div>
+                    <div className="r6"></div>
+                    <div className="r7"></div>
+                    <div className="r8"></div>
+                    <div className="r9"></div>
+                    <div className="top"></div>
+                    <div className="bot1"></div>
+                    <div className="bot2"></div>
+                  </div>
+                </div>
+
+                {/* Clouds */}
+                <div className="cloud big">
+                  <div className="circle c1"></div>
+                  <div className="circle c2"></div>
+                  <div className="circle c3"></div>
+                  <div className="circle c4"></div>
+                  <div className="circle c5"></div>
+                  <div className="circle c6"></div>
+                  <div className="circle c7"></div>
+                  <div className="circle c8"></div>
+                </div>
+                <div className="cloud small">
+                  <div className="circle c1"></div>
+                  <div className="circle c2"></div>
+                  <div className="circle c3"></div>
+                  <div className="circle c4"></div>
+                  <div className="circle c5"></div>
+                  <div className="circle c6"></div>
+                  <div className="circle c7"></div>
+                  <div className="circle c8"></div>
+                </div>
+
+                {/* Birds */}
+                <div className="birds front">
+                  <div className="bird b1">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b2">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b3">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b4">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b5">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b6">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="birds back">
+                  <div className="bird b7">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b8">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b9">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b10">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b11">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bird b12">
+                    <div className="body"></div>
+                    <div className="wing1">
+                      <div className="wing2">
+                        <div className="wing3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Hero Content */}
+            <div className="text-center lg:text-left space-y-8">
+              <div className="space-y-6">
+                <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight">
+                  Share Your Stories
+                </h1>
+                <p className="text-xl text-muted-foreground max-w-2xl lg:max-w-none">
+                  Discover amazing stories, share your thoughts, and connect with writers from around the world.
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="btn-enhanced" onClick={() => isLoggedIn ? null : setShowAuthModal(true)}>
+                  {isLoggedIn ? (
+                    <Link href="/write">Write a Story</Link>
+                  ) : (
+                    'Get Started'
+                  )}
+                </Button>
+                <Button variant="outline" size="lg" className="btn-magnetic">
+                  <Link href="/explore">Explore Stories</Link>
+                </Button>
+              </div>
+
+              {/* Quick Stats */}
+              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/50">
+                <div className="text-center lg:text-left">
+                  <div className="text-2xl font-bold text-primary">10K+</div>
+                  <div className="text-sm text-muted-foreground">Stories</div>
+                </div>
+                <div className="text-center lg:text-left">
+                  <div className="text-2xl font-bold text-primary">5K+</div>
+                  <div className="text-sm text-muted-foreground">Writers</div>
+                </div>
+                <div className="text-center lg:text-left">
+                  <div className="text-2xl font-bold text-primary">50K+</div>
+                  <div className="text-sm text-muted-foreground">Readers</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
